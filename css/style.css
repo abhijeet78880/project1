@@ -127,24 +127,35 @@ section.about .social{
     display: flex;
 }
 
-
+/* changes 1,2,3 will fix dhuku dhuku */
 section.about .social a{
     margin-right: 0.6rem;
     transition: all .3s ease;
+    padding: 5px; /*changes 1*/
 }
 
 
-section.about .social a:hover{
+/* section.about .social a:hover{
+    background: turquoise;
+} */
+
+section.about .social a img{
+    padding: 5px;   /*changes 2*/  
+}
+
+section.about .social a img:hover{
+    width: 58px;  
+    padding: 0px;  /*changes 3*/
+
+    /*additionalchanges*/
+    box-shadow: 1px 1px 3px #161616;
+    border-radius: 10%;
+    border: 2px solid #acf9ff ;
     background: turquoise;
 }
 
 
-/* the below code is comented knowingly.. */
-/* section.about .social a img{
-    transition: all 300s ease;
-    
-}
+/* responsiveness for width below 700px */
+@media screen and (max-width:700px;) {
 
-section.about .social a img:hover{
-    width: 60px;
-} */
+}
